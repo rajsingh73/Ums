@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS-PAGE</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="logo-circle.svg " type="image/x-icon">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body min-h-screen>
+    <div class="flex min-h-screen">
+        <div class="w-full min-h-screen">
+            <img  class="w-full h-full" src="first.jpg">
+        </div>
+        <div class="w-full flex flex-col items-center">
+            <div class="flex justify-center gap-6 mt-12">
+                <img class="w-20" src="logo-circle.svg">
+                <img class="w-96" src="logo-ums.svg">
+            </div>
+            <div class="w-3/4 h-2/3 mt-8 ">
+                <form class="flex flex-col w-full h-1/1 gap-3 text-lg  items-center" style="box-shadow:0px 0px 24px rgb(164, 164, 164)">
+                    <div class="flex w-2/3 mt-10 justify-center items-center">
+                    <p class=" w-32 text-3xl">Log In</p>
+                    <label for="office" class="mr-20 text-zinc-700">Headoffice</label>
+                    <select id="office" class="outline-0">
+                        <option value="" disabled selected hidden></option>
+                        <option value="Jalandhar">Jalandhar</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="lucknow">Lucknow</option>
+                    </select>
+                    </div>
+                    <div class="flex  w-2/3 justify-center mt-4 items-center">
+                    <input class="w-full text-zinc-700 placeholder:text-zinc-700 h-14 text-lg pl-6  " type="text" placeholder="User Id"></input>
+                    <p class="mr-4 text-zinc-700"><i class="fa-solid fa-user"></i></p>
+                    </div>                    
+                    <div class="flex  w-2/3 justify-center items-center">
+                        <input class="w-full text-zinc-700 placeholder:text-zinc-700 h-14 text-lg pl-6  " type="password" placeholder="password"></input>
+                        <p class="mr-4 text-zinc-700 "><i class="fa-solid fa-eye"></i></p>
+                    </div>
+                    <div class="mt-6">
+                        <label for="dash" class="ml-7 text-zinc-700">Dashboard</label>
+                        <select class="w-56 ml-8" id="dash" class="outline-0">
+                            <option value="" disabled selected hidden></option>
+                            <option value="Hostel">Hostel-booking</option>
+                            <option value="exam">Exam</option>
+                            <option value="Result">Result</option>
+                        </select>
+                    </div>
+                    <p class="ml-52 mt-8 text-zinc-700">forgot Your password?</p>
+                    <button class=" text-white rounded-lg bg-orange-400 w-3/4 h-14 mt-5 ml-2 border-black">Login</button>
+                </form>
+            </div>
+            <div class="flex mt-10 text-xl gap-6">
+                <p><i class="fa-solid fa-envelope text-3xl"></i></p>
+                <div class="text-zinc-700">Student mail</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
